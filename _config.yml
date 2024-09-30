@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Haniffa Lab
+title: Jardine Lab
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Diverse lab consisting of clinicians, researchers and students 
@@ -35,8 +35,11 @@ collections:
   internships:
     output: true   
 
+header:
+  image: /assets/img/lab_logo.png
+
 # Build settings
-theme: minima
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
 
