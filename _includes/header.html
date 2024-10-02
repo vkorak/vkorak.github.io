@@ -1,0 +1,177 @@
+<!-- / Welcome Section -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jardine Lab</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Welcome Section Styles */
+    .welcome {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh; /* Full viewport height */
+      text-align: center;
+    }
+
+    .inner-wrapper {
+      margin-top: auto;
+      margin-bottom: auto;
+      max-width: 800px;
+      padding: 20px;
+    }
+
+    .welcome-heading {
+      font-size: 3em; /* Large heading */
+    }
+
+    .lead {
+      font-size: 1.5em; /* Lead text size */
+    }
+
+    /* Navigation Bar Styles */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px; /* Navbar padding */
+    }
+
+    .navbar-brand {
+      text-decoration: none;
+      font-size: 24px; /* Brand text size */
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex; /* Horizontal alignment */
+    }
+
+    .navbar ul li {
+      position: relative; /* For dropdown positioning */
+      margin-left: 20px; /* Space between items */
+    }
+
+    .navbar ul li a {
+
+      text-decoration: none;
+      padding: 10px 15px; /* Link padding */
+      display: block;
+    }
+
+    .navbar ul li a:hover {
+      background-color: #575757; /* Background color on hover */
+    }
+
+    /* Dropdown Menu Styles */
+    .dropdown-menu {
+      display: none; /* Hidden by default */
+      position: absolute;
+      background-color: #333; /* Same color as navbar */
+      top: 100%; /* Aligns dropdown below the navbar */
+      left: 0;
+      min-width: 160px; /* Minimum width for dropdown */
+      z-index: 1; /* Ensure it appears above other content */
+    }
+
+    /* Show the dropdown on hover */
+    .navbar ul li:hover .dropdown-menu {
+      display: block; /* Show dropdown on hover */
+    }
+
+    /* Responsive Navbar */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the left */
+      }
+
+      .navbar ul {
+        flex-direction: column; /* Stack items vertically */
+        width: 100%; /* Full width */
+      }
+
+      .navbar ul li {
+        width: 100%; /* Full width for each item */
+      }
+
+      .navbar ul li a {
+        padding: 15px; /* More padding for mobile */
+        text-align: center; /* Center text for links */
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="{% if page.layout == 'home' %}welcome{% else %}top{% endif %}">
+  <div class="container">
+    <!-- Navigation -->
+    <nav class="navbar">
+      <a class="navbar-brand" href="{{ '/' | relative_url }}">
+        <img src="/assets/img/lab_logo.png" alt="Jardine Lab" style="max-height: 50px;">
+      </a>
+      <ul>
+        <li>
+          <a href="{{ '/#home' | relative_url }}">Home</a>
+        </li>
+        <li>
+          <a href="{{ '/#research' | relative_url }}">Research</a>
+        </li>
+        <li>
+          <a href="{{ '/#team' | relative_url }}">People</a>
+        </li>
+        <li>
+          <a href="{{ '/#publications' | relative_url }}">Publications</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="https://twitter.com/haniffalab"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/haniffalab/"><i class="fab fa-github"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- / Navigation -->
+  </div> <!-- .container -->
+
+  {% if page.layout == "home" %}
+  <!-- Inner Wrapper -->
+  <div class="inner-wrapper">
+    <h3 class="welcome-heading">Genomics of high-risk blood and 
+        lymphoid cancer</h3>
+    <p class="lead"> We aim to fully understand blood and lymphoid 
+        cancers that resist conventional treatments or 
+        relapse after 
+        treatment. 
+        - We work by combining multi-omics techniques, 
+        often simultaneously in individual cancer cells 
+        and repeating measurements serially across 
+        treatment timepoints. 
+        - Our goal is to achieve 
+        precise identification of high-risk features 
+        earlier in the disease course, and to identify 
+        new approaches for targeting the cells and 
+        pathways that drive relapse.</p>
+    <a href="/aims/" style="display: inline-block; padding: 10px 20px; background-color: transparent; border: 2px solid white; color: white; text-decoration: none; border-radius: 20px;">Learn More</a>
+  </div>
+  <!-- / Inner Wrapper -->
+  {% endif %}
+</div>
+<!-- / Welcome Section -->
+
+</body>
+</html>

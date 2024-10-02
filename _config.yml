@@ -25,53 +25,27 @@ description: >- # this means to ignore newlines until "baseurl:"
   from across the globe, working to understand how the immune system
   develops and maintains health.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://vkorak.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 logo: "/assets/img/lab_logo.png"
-collections:
-  team:
-    output: true   
-  internships:
-    output: true   
 
-
-main:
-  - title: "Quick-Start Guide"
-    url: /docs/quick-start-guide/
-  - title: "Posts"
-    url: /year-archive/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
-  - title: "Pages"
-    url: /page-archive/
-  - title: "Collections"
-    url: /collection-archive/
-  - title: "External Link"
-    url: https://google.com
-    target: _blank
-
-
-header:
-  image: /assets/img/lab_logo.png
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/mmistakes"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/mmistakes"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/mmistakes"
 # Build settings
 theme: minimal-mistakes-jekyll
-plugins:
-  - jekyll-feed
 
+# Navigation links (previously added)
+nav:
+  - title: "Home"
+    url: /
+  - title: "Team"
+    url: /team/
+  - title: "Research"
+    url: /research/
+  - title: "About"
+    url: /about/
+  - title: "Contact"
+    url: /contact/
+    
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

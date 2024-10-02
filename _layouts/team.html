@@ -1,20 +1,55 @@
 ---
-layout: page
-title: "Team"
+layout: default
 ---
-<div class="team-profile section py-4">
-  <h3 class="section-title text-center m-5">{{ page.name }}<span class="team-position">{{ page.position }}</span></h3>
-  
-  <div class="container py-5">
-    <div class="example col-md-12 ml-auto mr-auto">
-      <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-6">
-            <img class="img-fluid profile-img" src="/assets/img/team/{{ page.image }}" />
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6">
-            {{ content }}
-          </div>
-        </div>
-    </div>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Our Team</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="research.html">Research</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="team-member">
+            <h2>Professor Muzz Haniffa</h2>
+            <img src="" alt="Muzz Haniffa" />
+            <p>Wellcome Trust Senior Research Fellow in Clinical Science, Lister Institute Prize Fellow, Professor of Dermatology and Immunology.</p>
+            <p>
+                <a href="muzz-haniffa.html">More about Professor Haniffa</a>
+                <a href="https://scholar.google.com/citations?user=x8oMWIAAAAAJ&hl=en">Google Scholar</a>
+                <a href="https://www.sanger.ac.uk/group/haniffa-group/">Sanger Institute</a>
+            </p>
+        </section>
+
+        <section class="team-member">
+            <h2>Dr. Jane Doe</h2>
+            <img src="assets/img/team/jane-doe.jpg" alt="Jane Doe" />
+            <p>Research Scientist in Immunology.</p>
+            <p>
+                <a href="jane-doe.html">More about Dr. Doe</a>
+                <a href="https://scholar.google.com/citations?user=XYZ">Google Scholar</a>
+                <a href="https://example.com">Personal Website</a>
+            </p>
+        </section>
+
+        <!-- Add more team members as needed -->
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Your Organization. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
