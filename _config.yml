@@ -41,10 +41,6 @@ nav:
     url: /team/
   - title: "Research"
     url: /research/
-  - title: "About"
-    url: /about/
-  - title: "Contact"
-    url: /contact/
     
 # Exclude from processing.
 # The following items will not be processed, by default.

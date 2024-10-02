@@ -6,36 +6,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jardine Lab</title>
   <style>
+
     /* General Styles */
     body {
-      font-family: Arial, sans-serif;
+      font-family: Poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
       margin: 0;
       padding: 0;
     }
-
+    
     /* Welcome Section Styles */
+    
     .welcome {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      min-height: 100vh; /* Full viewport height */
-      text-align: center;
+      min-height: 50vh; /* Full viewport height */
+      text-align: left;
+    }
+    
+    .container {
+    max-width: 1000px;  /* Page width is limited to 900px */
+    margin: 0 auto;    /* Horizontally center the page */
+    padding: 20px;     /* Add padding around the content */
+    background-color: white;
+  }
+  
+  .inner-wrapper {
+  margin-top: auto;
+  margin-bottom: auto;
+  max-width: 800px;
+  padding: 0px;
+}
+  
+
+.welcome-heading {
+  font-size: 1.5em; /* Large heading */
+  text-align: left; /* Ensure heading is aligned to the left */
+}
+
+.lead {
+  font-size: 1em; /* Lead text size */
+  text-align: left; /* Ensure lead paragraph is aligned to the left */
+}
+
+    /* List Styles */
+    
+    ul {
+      list-style-type: none; /* Remove default bullets */
+      padding: 0; /* Remove padding */
+      margin: 0; /* Remove margin */
     }
 
-    .inner-wrapper {
-      margin-top: auto;
-      margin-bottom: auto;
-      max-width: 800px;
-      padding: 20px;
-    }
-
-    .welcome-heading {
-      font-size: 3em; /* Large heading */
-    }
-
-    .lead {
-      font-size: 1.5em; /* Lead text size */
+    li {
+      padding-left: 0px; /* Add padding to indent the list items */
+      margin-bottom: 10px; /* Space between list items */
     }
 
     /* Navigation Bar Styles */
@@ -43,12 +68,20 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 20px; /* Navbar padding */
+      padding: 10px 10px; /* Navbar padding */
+      border-top: 4px solid #ff9999; /* Top border line */
+      border-bottom: 4px solid #ff9999; /* Bottom border line */
+      display: flex;
+      width: 100vw; /* Full viewport width */
+      position: relative; /* Make sure it can expand */
+      left: 50%; /* Centering trick */
+      transform: translateX(-50%); /* Center the navbar */
     }
 
     .navbar-brand {
       text-decoration: none;
       font-size: 24px; /* Brand text size */
+      color: #001a21; /* Brand color */
     }
 
     .navbar ul {
@@ -60,18 +93,20 @@
 
     .navbar ul li {
       position: relative; /* For dropdown positioning */
-      margin-left: 20px; /* Space between items */
+      margin-left: 10px; /* Space between items */
     }
 
     .navbar ul li a {
 
       text-decoration: none;
-      padding: 10px 15px; /* Link padding */
+      padding: 0px 15px; /* Link padding */
       display: block;
+      color: #336699; /* Link color */
+      transition: background-color 0.3s, color 0.3s; /* Smooth transition */
     }
 
     .navbar ul li a:hover {
-      background-color: #575757; /* Background color on hover */
+      background-color: #FF9999; /* Background color on hover */
     }
 
     /* Dropdown Menu Styles */
@@ -111,6 +146,7 @@
         text-align: center; /* Center text for links */
       }
     }
+
   </style>
 </head>
 <body>
@@ -119,21 +155,24 @@
   <div class="container">
     <!-- Navigation -->
     <nav class="navbar">
-      <a class="navbar-brand" href="{{ '/' | relative_url }}">
-        <img src="/assets/img/lab_logo.png" alt="Jardine Lab" style="max-height: 50px;">
+      <a class="navbar-brand" href="{{ '/' | relative_url }}" style="margin-left: 50px;"> <!-- Added margin here -->
+          <img src="/assets/img/lab_logo.png" alt="Jardine Lab" class="site-logo" style="max-height: 70px;">
       </a>
-      <ul>
+      <ul style="margin-left: 400px;"> <!-- Adjust margin-left here -->
         <li>
-          <a href="{{ '/#home' | relative_url }}">Home</a>
+          <a href="{{ '/' | relative_url }}">Home</a>
         </li>
         <li>
-          <a href="{{ '/#research' | relative_url }}">Research</a>
+          <a href="{{ '/team/' | relative_url }}">People</a>
         </li>
         <li>
-          <a href="{{ '/#team' | relative_url }}">People</a>
+          <a href="{{ '/research/' | relative_url }}">Research</a>
         </li>
         <li>
-          <a href="{{ '/#publications' | relative_url }}">Publications</a>
+          <a href="{{ '/publications/' | relative_url }}">Publications</a>
+        </li>
+        <li>
+          <a href="{{ '/news/' | relative_url }}">News</a>
         </li>
       </ul>
       <ul>
@@ -151,22 +190,14 @@
   {% if page.layout == "home" %}
   <!-- Inner Wrapper -->
   <div class="inner-wrapper">
-    <h3 class="welcome-heading">Genomics of high-risk blood and 
-        lymphoid cancer</h3>
-    <p class="lead"> We aim to fully understand blood and lymphoid 
-        cancers that resist conventional treatments or 
-        relapse after 
-        treatment. 
-        - We work by combining multi-omics techniques, 
-        often simultaneously in individual cancer cells 
-        and repeating measurements serially across 
-        treatment timepoints. 
-        - Our goal is to achieve 
-        precise identification of high-risk features 
-        earlier in the disease course, and to identify 
-        new approaches for targeting the cells and 
-        pathways that drive relapse.</p>
-    <a href="/aims/" style="display: inline-block; padding: 10px 20px; background-color: transparent; border: 2px solid white; color: white; text-decoration: none; border-radius: 20px;">Learn More</a>
+    <h3 class="welcome-heading">Genomics of high-risk blood and lymphoid cancer</h3>
+    <p class="lead"> </p>
+    <ul>
+      <li>We aim to fully understand blood and lymphoid cancers that resist conventional treatments or relapse after treatment.</li>
+      <li>We work by combining multi-omics techniques, often simultaneously in individual cancer cells and repeating measurements serially across treatment timepoints.</li>
+      <li>Our goal is to achieve precise identification of high-risk features earlier in the disease course, and to identify new approaches for targeting the cells and pathways that drive relapse.</li>
+    </ul>
+    <a href="/research/" style="display: inline-block; padding: 10px 20px; background-color: transparent; border: 2px solid #336699; color: #336699; text-decoration: none; border-radius: 20px;">Learn More</a>
   </div>
   <!-- / Inner Wrapper -->
   {% endif %}
