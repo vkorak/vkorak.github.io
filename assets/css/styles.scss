@@ -1,0 +1,26 @@
+.team-member {
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    text-align: center; // Center align text and images
+  }
+  
+  .team-member-photo {
+    width: 150px; // Set width as per your design
+    height: auto; // Maintain aspect ratio
+    border-radius: 50%; // Makes the image circular (optional)
+    margin-bottom: 10px; // Space below image
+  }
+  
+  .team-member h3 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .team-member p {
+    margin: 5px 0;
+  }
+
+
