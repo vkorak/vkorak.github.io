@@ -10,18 +10,18 @@ permalink: /team/
 <style>
 
 body {
-  font-family: 'Helvetica', sans-serif; /* Change to the desired font */
-  color: #333; /* You can also change the default text color */
+  font-family: Poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
+  color: #333; 
   padding-left: 40px;
   padding-right: 40px;
 }
 
 .team-page-title {
-  font-family: 'Georgia', serif; /* Example font family */
+  font-family: 'Georgia', serif; 
   font-size: 2em;
   color: #CC3333; /* Custom color */
   text-align: left;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .vacancies-title {
