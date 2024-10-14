@@ -76,7 +76,7 @@ ul li strong {
   </li>
 
   <li>
-    <img src="{{ '/assets/img/values_im3.jpg' | relative_url }}" alt="Environment Icon" class="value-icon" />
+    <img src="{{ '/assets/img/values_im4.jpg' | relative_url }}" alt="Environment Icon" class="value-icon" />
     <strong>Conscious</strong> of our impact on the environment, and committed to reducing this through responsible travel and sustainable research practices.
   </li>
 </ul>
