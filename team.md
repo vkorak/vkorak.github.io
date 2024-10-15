@@ -132,7 +132,7 @@ Our science depends on teamwork and collaboration between individuals trained in
   <div class="team-member">
     <img src="{{ '/assets/img/team/koraki_folli_bw_cp.png' | relative_url }}" alt="Varvara Koraki Folli" class="team-member-photo" />
     <h3>Varvara Koraki Folli</h3>
-    <p>Assistant Research</p>
+    <p>Research Assistant</p>
   </div>
 </div>
 
