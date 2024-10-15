@@ -24,4 +24,37 @@ body {
   margin-bottom: 10px;
 }
 
+.research-page-intro, .research-page-outro {
+  font-size: 1.2em;
+  margin-bottom: 50px; /* Adds space between text and team blocks */
+  line-height: 1.6;
+  text-align: left; /* Optional: center the text */
+}
+
 </style>
+
+ Using a transcriptional readout of blood cell differentiation to risk-stratify Acute Lymphoblastic Leukaemia
+ Precision targeting of Primary CNS Lymphoma and its tumour microenvironment
+Investigating organ tropism in Acute Myeloid Leukaemia
+
+
+<!-- Text before the team blocks -->
+<div class="research-page-intro">
+
+<p>Our current work includes:</p>
+
+<ul>
+  <li>
+    Using a transcriptional readout of blood cell differentiation to risk-stratify Acute Lymphoblastic Leukaemia
+  </li>
+
+  <li>
+    Precision targeting of Primary CNS Lymphoma and its tumour microenvironment
+  </li>
+
+  <li>
+    Investigating organ tropism in Acute Myeloid Leukaemia
+  </li>
+</ul>
+
+</div>

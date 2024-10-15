@@ -61,22 +61,22 @@ ul li strong {
 
 <ul>
   <li>
-    <img src="{{ '/assets/img/values_im1.jpg' | relative_url }}" alt="Integrity Icon" class="value-icon" />
+    <img src="{{ '/assets/img/values_icon1.jpg' | relative_url }}" alt="Integrity Icon" class="value-icon" />
     <strong>Honest and act with integrity.</strong> We strive for the highest quality, reproducible results, fairly shared.
   </li>
 
   <li>
-    <img src="{{ '/assets/img/values_im2.jpg' | relative_url }}" alt="Respect Icon" class="value-icon" />
+    <img src="{{ '/assets/img/values_icon2.jpg' | relative_url }}" alt="Respect Icon" class="value-icon" />
     <strong>Respectful</strong> of the unique contributions that every researcher brings, and committed to providing an environment where everyone is valued and everyone thrives.
   </li>
 
   <li>
-    <img src="{{ '/assets/img/values_im3.jpg' | relative_url }}" alt="Training Icon" class="value-icon" />
+    <img src="{{ '/assets/img/values_icon3.jpg' | relative_url }}" alt="Training Icon" class="value-icon" />
     <strong>Dedicated</strong> to training the next generation of scientists, and to increasing the diversity of our scientific workforce through our schools engagement programme.
   </li>
 
   <li>
-    <img src="{{ '/assets/img/values_im4.jpg' | relative_url }}" alt="Environment Icon" class="value-icon" />
+    <img src="{{ '/assets/img/values_icon4.jpg' | relative_url }}" alt="Environment Icon" class="value-icon" />
     <strong>Conscious</strong> of our impact on the environment, and committed to reducing this through responsible travel and sustainable research practices.
   </li>
 </ul>
