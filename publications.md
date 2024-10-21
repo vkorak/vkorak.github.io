@@ -10,10 +10,10 @@ permalink: /publications/
 <style>
 
 body {
-  font-family: Poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
+  font-family:Poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; 
   color: #333; 
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .publications-page-title {
@@ -24,12 +24,6 @@ body {
   margin-bottom: 10px;
 }
 
-.publications-page-intro, .publications-page-outro {
-  font-size: 1.3em;
-  margin-bottom: 50px; /* Adds space between text and team blocks */
-  line-height: 1.6;
-  text-align: left; /* Optional: center the text */
-}
 /* Styling for the single-column publication table */
 table {
   width: 100%;

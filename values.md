@@ -34,6 +34,7 @@ body {
 ul {
   line-height: 1.6;
   margin-left: 20px;
+  font-size: 0.9em;
 }
 
 ul li {
@@ -46,9 +47,9 @@ ul li strong {
 
 /* Style for the small icons before each point */
 .value-icon {
-  width: 50px; /* Set the size of the icon */
-  height: 50px; /* Ensure the icon is square */
-  margin-right: 10px; /* Add space between the icon and the text */
+  width: 40px; /* Set the size of the icon */
+  height: 40px; /* Ensure the icon is square */
+  margin-right: 15px; /* Add space between the icon and the text */
   vertical-align: middle; /* Align the icon with the text */
 }
 

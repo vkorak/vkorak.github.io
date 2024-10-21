@@ -24,14 +24,6 @@ body {
   margin-bottom: 10px;
 }
 
-.vacancies-title {
-  font-family: 'Georgia', serif; /* Example font family */
-  font-size: 1.8em;
-  color: #CC3333; /* Custom color */
-  text-align: left;
-  margin-bottom: 30px;
-}
-
 .team-container {
   display: flex;
   justify-content: space-between; /* Spread out the team members evenly */
@@ -92,12 +84,9 @@ body {
 .team-page-intro, .team-page-outro {
   font-size: 1.2em;
   margin-bottom: 50px; /* Adds space between text and team blocks */
+  margin-top: 40px; /* Adds space above the closing text */
   line-height: 1.6;
   text-align: center; /* Optional: center the text */
-}
-
-.team-page-outro {
-  margin-top: 40px; /* Adds space above the closing text */
 }
 
 </style>
@@ -137,7 +126,7 @@ Our science depends on teamwork and collaboration between individuals trained in
 </div>
 
 <!-- Text after the team blocks -->
-<h1 class="vacancies-title">Current vacancies:</h1>
-<div class="team-page-outro">
+<h1 class="team-page-title">Current vacancies:</h1>
+<div class="team-page-intro">
 We have no vacancies at present. However, we’d still like to hear from you if you are enthusiastic about our work and have skills or interests that align with our research. 
 </div>
