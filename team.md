@@ -29,12 +29,12 @@ body {
   justify-content: space-between; /* Spread out the team members evenly */
   flex-wrap: wrap; /* Ensure the members wrap on smaller screens */
   gap: 10px; /* Space between each team member block */
-  padding: 10px;
+  padding: 40px;
 }
 
 /* Individual team member block */
 .team-member {
-  flex-basis: 28%; /* Ensure each team member takes up around 22% of the row width */
+  flex-basis: 30%; /* Ensure each team member takes up around 22% of the row width */
   text-align: center; /* Center the text */
   max-width: 250px; /* Set a max width for each block */
   flex-grow: 1;

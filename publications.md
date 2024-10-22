@@ -4,7 +4,7 @@ layout: default
 permalink: /publications/
 ---
 
-<h1 class="publications-page-title">Publications</h1>
+<h1 class="publications-page-title">Recents Publications</h1>
 
 <!-- /Page Styling  -->
 <style>
@@ -22,6 +22,14 @@ body {
   color: #CC3333; /* Custom color */
   text-align: left;
   margin-bottom: 10px;
+}
+
+.publications-page-intro, .publications-page-outro {
+  font-size: 1.2em;
+  margin-bottom: 50px; /* Adds space between text and team blocks */
+  margin-top: 40px; /* Adds space above the closing text */
+  line-height: 1.6;
+  text-align: center; /* Optional: center the text */
 }
 
 /* Styling for the single-column publication table */
@@ -84,3 +92,7 @@ td a:hover {
       DOI: <a href="https://doi.org/10.1038/s41586-021-03929-x" target="_blank">10.1038/s41586-021-03929-x</a>
     </td>
   </tr>
+
+<div class="publications-page-intro">
+For more publications, take a look at our ORCID.
+</div>
