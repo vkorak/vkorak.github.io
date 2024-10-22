@@ -29,7 +29,7 @@ body {
   margin-bottom: 50px; /* Adds space between text and team blocks */
   margin-top: 40px; /* Adds space above the closing text */
   line-height: 1.6;
-  text-align: center; /* Optional: center the text */
+  text-align: left; 
 }
 
 /* Styling for the single-column publication table */
@@ -94,5 +94,5 @@ td a:hover {
   </tr>
 
 <div class="publications-page-intro">
-For more publications, take a look at our ORCID.
+Check out our [ORDID](https://orcid.org/0000-0003-4495-8205) for more publications.
 </div>
