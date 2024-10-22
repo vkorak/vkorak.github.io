@@ -4,7 +4,7 @@ layout: default
 permalink: /publications/
 ---
 
-<h1 class="publications-page-title">Recents Publications</h1>
+<h1 class="publications-page-title">Recent Publications</h1>
 
 <!-- /Page Styling  -->
 <style>
@@ -26,8 +26,8 @@ body {
 
 .publications-page-intro, .publications-page-outro {
   font-size: 1.2em;
-  margin-bottom: 50px; /* Adds space between text and team blocks */
-  margin-top: 40px; /* Adds space above the closing text */
+  margin-bottom: 50px; 
+  margin-top: 40px; 
   line-height: 1.6;
   text-align: left; 
 }
@@ -94,5 +94,5 @@ td a:hover {
   </tr>
 
 <div class="publications-page-intro">
-Check out our <a href="https://orcid.org/0000-0003-4495-8205" target="_blank">ORCID</a> for more publications.
+Check out the Laura Jardine <a href="https://orcid.org/0000-0003-4495-8205" target="_blank">ORCID</a> for more publications.
 </div>
