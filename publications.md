@@ -94,5 +94,5 @@ td a:hover {
   </tr>
 
 <div class="publications-page-intro">
-Check out our [ORDID](https://orcid.org/0000-0003-4495-8205) for more publications.
+Check out our <a href="https://orcid.org/0000-0003-4495-8205" target="_blank">ORCID</a> for more publications.
 </div>
