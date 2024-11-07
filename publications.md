@@ -4,7 +4,7 @@ layout: default
 permalink: /publications/
 ---
 
-<h1 class="publications-page-title">Recent Publications</h1>
+<h1 class="publications-page-title">Selected Publications</h1>
 
 <!-- /Page Styling  -->
 <style>
