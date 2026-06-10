@@ -1,194 +1,98 @@
-<!-- / Welcome Section -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jardine Lab</title>
-  <style>
-
-    /* General Styles */
-
-    body {
-      font-family: Poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-      color: #333; 
-      padding-left: 40px;padding-right: 40px;
-    }
-    
-    /* Welcome Section Styles */
-    
-    .welcome {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      min-height: 50vh; /* Full viewport height */
-      text-align: left;
-    }
-  
-  .inner-wrapper {
-  max-width: 900px;
-  padding: 0px;
-  align-items: left;
+<style>
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-top: 4px solid #CCCCFF;
+  border-bottom: 4px solid #CCCCFF;
+  font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
-  
-
-.welcome-heading {
-  font-family: 'Georgia', serif; 
-  font-size: 2em;
-  text-align: left;
-  margin-bottom: 10px;
+.navbar-brand img {
+  max-height: 70px;
+  display: block;
 }
-
-.lead {
-  font-size: 1.2em; /* Lead text size */
-  font-family: Poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  text-align: left; /* Ensure lead paragraph is aligned to the left */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
 }
+.nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #333;
+  border-radius: 2px;
+}
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navbar ul li a {
+  display: block;
+  padding: 18px 14px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #336699;
+  transition: background-color 0.3s, color 0.3s;
+}
+.navbar ul li a:hover {
+  background-color: #CCCCFF;
+}
+@media (max-width: 768px) {
+  .nav-toggle { display: flex; }
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 78px;
+    left: 0;
+    background: #fff;
+    border-bottom: 2px solid #CCCCFF;
+    z-index: 99;
+  }
+  .navbar ul.open { display: flex; }
+  .navbar ul li a {
+    padding: 14px 20px;
+    border-bottom: 1px solid #eee;
+  }
+}
+</style>
 
-    /* List Styles */
-    
-    ul {
-      list-style-type: none; /* Remove default bullets */
-      padding: 0; /* Remove padding */
-      margin: 0; /* Remove margin */
-    }
+<nav class="navbar">
+  <a class="navbar-brand" href="{{ '/' | relative_url }}">
+    <img src="/assets/img/lab_logo.png" alt="Jardine Lab">
+  </a>
+  <button class="nav-toggle" aria-label="Toggle navigation"
+          onclick="document.querySelector('.navbar ul').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul>
+    <li><a href="{{ '/' | relative_url }}">Home</a></li>
+    <li><a href="{{ '/team/' | relative_url }}">People</a></li>
+    <li><a href="{{ '/values/' | relative_url }}">Values</a></li>
+    <li><a href="{{ '/research/' | relative_url }}">Research</a></li>
+    <li><a href="{{ '/publications/' | relative_url }}">Publications</a></li>
+  </ul>
+</nav>
 
-    li {
-      font-size: 1.2em; /* Lead text size */
-      font-family: Poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-      padding-left: 0px; /* Add padding to indent the list items */
-      margin-bottom: 20px; /* Space between list items */
-    }
-
-    /* Navigation Bar Styles */
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 10px; /* Navbar padding */
-      border-top: 4px solid #CCCCFF; /* Top border line */
-      border-bottom: 4px solid #CCCCFF; /* Bottom border line */
-      display: flex;
-      width: 98vw; /* Full viewport width */
-      position: relative; /* Make sure it can expand */
-      left: 50%; /* Centering trick */
-      transform: translateX(-50%); /* Center the navbar */
-    }
-
-    .navbar ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex; /* Horizontal alignment */
-    }
-
-    .navbar ul li {
-      position: relative; /* For dropdown positioning */
-      margin-left: 0px; /* Space between items */
-    }
-
-    .navbar ul li a {
-
-      text-decoration: none;
-      padding:15px 15px; /* Link padding */
-      display: block;
-      font-size: 17px;
-      color: #336699; /* Link color */
-      transition: background-color 0.3s, color 0.3s; /* Smooth transition */
-    }
-
-    .navbar ul li a:hover {
-      background-color: #CCCCFF; /* Background color on hover */
-    }
-
-    /* Dropdown Menu Styles */
-    .dropdown-menu {
-      display: none; /* Hidden by default */
-      position: absolute;
-      background-color: #333; /* Same color as navbar */
-      top: 100%; /* Aligns dropdown below the navbar */
-      left: 0;
-      min-width: 160px; /* Minimum width for dropdown */
-      z-index: 1; /* Ensure it appears above other content */
-    }
-
-    /* Show the dropdown on hover */
-    .navbar ul li:hover .dropdown-menu {
-      display: block; /* Show dropdown on hover */
-    }
-
-    /* Responsive Navbar */
-    @media (max-width: 768px) {
-      .navbar {
-        flex-direction: column;
-        align-items: flex-start; /* Align items to the left */
-      }
-
-      .navbar ul {
-        flex-direction: column; /* Stack items vertically */
-        width: 100%; /* Full width */
-      }
-
-      .navbar ul li {
-        width: 100%; /* Full width for each item */
-      }
-
-      .navbar ul li a {
-        padding: 15px; /* More padding for mobile */
-        text-align: center; /* Center text for links */
-      }
-    }
-
-  </style>
-</head>
-<body>
-
-<div class="{% if page.layout == 'home' %}welcome{% else %}top{% endif %}">
-  <div class="container">
-    <!-- Navigation -->
-    <nav class="navbar">
-      <a class="navbar-brand" href="{{ '/' | relative_url }}" style="margin-left: 50px;"> <!-- Added margin here -->
-          <img src="/assets/img/lab_logo.png" alt="Jardine Lab" class="site-logo" style="max-height: 70px;">
-      </a>
-      <ul style="margin-left: auto;"> <!-- Adjust margin-left here -->
-        <li>
-          <a href="{{ '/' | relative_url }}">Home</a>
-        </li>
-        <li>
-          <a href="{{ '/team/' | relative_url }}">People</a>
-        </li>
-        <li>
-          <a href="{{ '/values/' | relative_url }}">Values</a>
-        </li>
-        <li>
-          <a href="{{ '/research/' | relative_url }}">Research</a>
-        </li>
-        <li>
-          <a href="{{ '/publications/' | relative_url }}">Publications</a>
-        </li>
-      </ul>
-    </nav>
-    <!-- / Navigation -->
-  </div> <!-- .container -->
-
-  {% if page.layout == "home" %}
-  <!-- Inner Wrapper -->
-  <div class="inner-wrapper">
-    <h3 class="welcome-heading">Genomics of high-risk blood and lymphoid cancer</h3>
-    <p class="lead"> </p>
-    <ul>
-      <li>We aim to fully understand blood and lymphoid cancers that resist conventional treatments or relapse after treatment.</li>
-      <li>We work by combining multi-omics techniques, often simultaneously in individual cancer cells and repeating measurements serially across treatment timepoints.</li>
-      <li>Our goal is to achieve precise identification of high-risk features earlier in the disease course, and to identify new approaches for targeting the cells and pathways that drive relapse.</li>
-    </ul>
-    <a href="/research/" style="display: inline-block; padding: 10px 20px;margin-top: 10px; background-color: transparent; border: 2px solid #336699; color: #336699; text-decoration: none; border-radius: 20px;">Learn More</a>
-  </div>
-  <!-- / Inner Wrapper -->
-  {% endif %}
+{% if page.layout == "home" %}
+<div style="max-width:900px; margin: 60px auto; padding: 0 20px;">
+  <h3 style="font-family:'Georgia',serif; font-size:2em; margin-bottom:10px; color:#336699;">
+    Genomics of high-risk blood and lymphoid cancer
+  </h3>
+  <ul style="list-style:none; padding:0; margin:20px 0;">
+    <li style="font-size:1.1em; margin-bottom:16px; line-height:1.6;">We aim to fully understand blood and lymphoid cancers that resist conventional treatments or relapse after treatment.</li>
+    <li style="font-size:1.1em; margin-bottom:16px; line-height:1.6;">We work by combining multi-omics techniques, often simultaneously in individual cancer cells and repeating measurements serially across treatment timepoints.</li>
+    <li style="font-size:1.1em; margin-bottom:16px; line-height:1.6;">Our goal is to achieve precise identification of high-risk features earlier in the disease course, and to identify new approaches for targeting the cells and pathways that drive relapse.</li>
+  </ul>
+  <a href="/research/" style="display:inline-block; padding:10px 20px; margin-top:10px; background:transparent; border:2px solid #336699; color:#336699; text-decoration:none; border-radius:20px;">Learn More</a>
 </div>
-<!-- / Welcome Section -->
-
-</body>
-</html>
+{% endif %}
