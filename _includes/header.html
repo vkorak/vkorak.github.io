@@ -74,12 +74,12 @@
           onclick="document.querySelector('.navbar ul').classList.toggle('open')">
     <span></span><span></span><span></span>
   </button>
-  <ul>
-    <li><a href="{{ '/' | relative_url }}">Home</a></li>
-    <li><a href="{{ '/team/' | relative_url }}">People</a></li>
-    <li><a href="{{ '/values/' | relative_url }}">Values</a></li>
-    <li><a href="{{ '/research/' | relative_url }}">Research</a></li>
-    <li><a href="{{ '/publications/' | relative_url }}">Publications</a></li>
+  <ul id="nav-menu">
+    <li><a href="{{ '/' | relative_url }}" onclick="document.getElementById('nav-menu').classList.remove('open')">Home</a></li>
+    <li><a href="{{ '/team/' | relative_url }}" onclick="document.getElementById('nav-menu').classList.remove('open')">People</a></li>
+    <li><a href="{{ '/values/' | relative_url }}" onclick="document.getElementById('nav-menu').classList.remove('open')">Values</a></li>
+    <li><a href="{{ '/research/' | relative_url }}" onclick="document.getElementById('nav-menu').classList.remove('open')">Research</a></li>
+    <li><a href="{{ '/publications/' | relative_url }}" onclick="document.getElementById('nav-menu').classList.remove('open')">Publications</a></li>
   </ul>
 </nav>
 
