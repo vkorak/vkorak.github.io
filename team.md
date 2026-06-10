@@ -21,7 +21,7 @@ body {
   font-size: 2em;
   color: #CC3333; /* Custom color */
   text-align: left;
-  margin-bottom: 10px;
+  margin-top: 0; margin-bottom: 10px;
 }
 
 .team-container {
