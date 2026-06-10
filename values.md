@@ -21,7 +21,7 @@ body {
   font-size: 2em;
   color: #CC3333; /* Custom color */
   text-align: left;
-  margin-top: 40px; margin-bottom: 30px;
+  margin-top: 40px; margin-top: 0; margin-bottom: 30px;
 }
 
 .values-page-intro, .values-page-outro {
