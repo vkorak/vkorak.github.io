@@ -125,6 +125,7 @@ Our science depends on teamwork and collaboration between individuals trained in
   </div>
 </div>
 
+
 <!-- Text after the team blocks -->
 <h1 class="team-page-title">Current vacancies:</h1>
 <div class="team-page-intro">
