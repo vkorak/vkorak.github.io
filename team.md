@@ -29,7 +29,7 @@ body {
   justify-content: space-between; /* Spread out the team members evenly */
   flex-wrap: wrap; /* Ensure the members wrap on smaller screens */
   gap: 10px; /* Space between each team member block */
-  padding: 40px;
+  
 }
 
 /* Individual team member block */
