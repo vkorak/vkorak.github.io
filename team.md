@@ -99,7 +99,7 @@ Our science depends on teamwork and collaboration between individuals trained in
 </div>
 
 <!-- Team members block -->
-<div class="team-container">
+<div class="team-container" style="margin-bottom: 3rem;">
   <div class="team-member">
     <img src="{{ '/assets/img/team/laura_jardine_bw_cp.png' | relative_url }}" alt="Laura Jardine" class="team-member-photo" />
     <h3>Laura Jardine</h3>
